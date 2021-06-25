@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&display=swap");
+
+body {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	background-color: #f2f2f2;
+}
+.container {
+	display: block;
+	max-width: 600px;
+	padding: 50px;
+	margin: 0 auto;
+	/*background-color: #f7f6f5;*/
+	/*min-height: 100vh;*/
+	position: relative;
+	&:before {
+		/*content: "";*/
+		height: 100%;
+		width: 100%;
+		background-color: #222;
+		position: absolute;
+		z-index: -1;
+		transform: rotate(120deg);
+		left: 0;
+		bottom: 0;
+	}
+}
+h2 {
+	color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 0;
+    margin: 0px 0px 20px;
+
+
+}
+form {
+	background-color: #ffffff;
+	padding: 30px 50px 50px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
+	border-radius: 4px;
+
+	 > div:nth-child(1),
+	 > div:nth-child(2) {
+    	display: inline-block;
+    	font-size: 0;
+    	width: 48%;
+    }
+
+    > div:nth-child(2) {
+    	float: right;
+    }
+}
+
+label {
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	color: #222;
+	margin-bottom: 8px;
+	font-size: 18px;
+	margin-top: 25px;
+	span {
+		color: red;
+	}
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 8px 0;
+	display: block;
+}
+
+input[type="text"],
+textarea {
+	background-color: #fafafa;
+	border: solid 1px #ddd;
+	border-radius: 4px;
+	resize: vertical;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	color: #222;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+input[type="submit"] {
+	font-size: 18px;
+    border: #ddd;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 30px;
+    margin-top: 24px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.message-success {
+	font-size: 16px;
+    color: green;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 128, 0, 0.1);
+    border: solid 1px green;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 0 15px;
+}
+
+.result-container {
+	padding: 50px 30px;
+    background-color: #222;
+    display: block;
+    color: #fff;
+}
+pre {
+    font-size: 18px;
+    color: #fff;
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&display=swap");
+/* line 3, ../sass/main.scss */
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* line 9, ../sass/main.scss */
+.container {
+  display: block;
+  max-width: 600px;
+  padding: 50px;
+  margin: 0 auto;
+  /*background-color: #f7f6f5;*/
+  /*min-height: 100vh;*/
+  position: relative;
+}
+/* line 17, ../sass/main.scss */
+.container:before {
+  /*content: "";*/
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(120deg);
+  left: 0;
+  bottom: 0;
+}
+
+/* line 29, ../sass/main.scss */
+h2 {
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  padding: 0;
+  margin: 0px 0px 20px;
+}
+
+/* line 39, ../sass/main.scss */
+form {
+  background-color: #ffffff;
+  padding: 30px 50px 50px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+/* line 45, ../sass/main.scss */
+form > div:nth-child(1),
+form > div:nth-child(2) {
+  display: inline-block;
+  font-size: 0;
+  width: 48%;
+}
+/* line 52, ../sass/main.scss */
+form > div:nth-child(2) {
+  float: right;
+}
+
+/* line 57, ../sass/main.scss */
+label {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  color: #222;
+  margin-bottom: 8px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+/* line 64, ../sass/main.scss */
+label span {
+  color: red;
+}
+
+/* line 69, ../sass/main.scss */
+.error {
+  color: red;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 8px 0;
+  display: block;
+}
+
+/* line 77, ../sass/main.scss */
+input[type="text"],
+textarea {
+  background-color: #fafafa;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/main.scss */
+input[type="submit"] {
+  font-size: 18px;
+  border: #ddd;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 30px;
+  margin-top: 24px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+/* line 104, ../sass/main.scss */
+.message-success {
+  font-size: 16px;
+  color: green;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(0, 128, 0, 0.1);
+  border: solid 1px green;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 0 15px;
+}
+
+/* line 115, ../sass/main.scss */
+.result-container {
+  padding: 50px 30px;
+  background-color: #222;
+  display: block;
+  color: #fff;
+}
+
+/* line 121, ../sass/main.scss */
+pre {
+  font-size: 18px;
+  color: #fff;
+}
